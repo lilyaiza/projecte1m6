@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="teststyle.css">
+	<script type="text/javascript" defer src="testpop.js"></script>
+
+	<title>Test autoevaluació</title>
+</head>
+<body onload="intents()">
+<h1 align="center"> Qüestionari d'autoevaluació</h1>
+
+<div id = "ig">
+<label>Intents globals:</label><p id="intents"></p>
+</div>
+
+
+<div align="center"> 
+<p><b>1 - Que és Windows?</b></p>
+
+<button id="netejar_b1" onclick="netejar()" name="clear"><img heigth="15px" width="15px" src="borrar.png"></button>
+
+<button id="check_b1" onclick="check()" name="check"><img heigth="15px" width="15px" src="check.png"></button>
+
+<form id="formRespostes">
+	<p name="respostes"><input type="radio" name="resposta" class="correcta">
+		<label id="correcta">Un sistema operatiu</label><img class = "vx" id = "correcta1" src = "correcta.png" hidden></input></p><br>
+	<p name="respostes"><input type="radio" id="resposta2" name="resposta"><label id="lab_resposta2">Un editor de imatges</label><img class = "vx" id = "error1" src = "error.png" hidden></input></p><br>
+	<p name="respostes"><input type="radio" id="resposta3" name="resposta"><label id="lab_resposta3">Cap de les respostes anteriors.</label><img class = "vx" id = "error2" src = "error.png" hidden></input></p><br>
+
+</form>
+
+
+<p>Intents:</p><p id="intents1"></p><br>
+</div>
+<br>
+<br>
+
+
+
+<div>
+
+<p><b>2 - Para deshacer utilizamos el atajo de telcado CTRL + X. </b></p>
+
+<button id="netejar_b2" onclick="netejar2()" name="clear"><img heigth="15px" width="15px" src="borrar.png"></button>
+<button id="check_b2" onclick="check2()" name="check"><img heigth="15px" width="15px" src="check.png"></button>
+
+<p>Resposta de veritable o fals</p> 
+
+<form id="form_vof">
+
+<p name="respostes"><input id="verdadero" type="radio" name="vof" value="resposta">
+	<label id="vof1">Veritable</label><img class = "vx" id = "error3" src = "error.png" hidden></input> </p> 
+
+<p name="respostes"><input id="falso" type="radio" name="vof" class="correcta" value="resposta">
+	<label id="vof2">Fals</label><img class = "vx" id = "correcta2" src = "correcta.png" hidden></input></p><br>
+
+
+</form>
+
+<p>Intents:</p><p id="intents2"></p>
+
+<br>
+
+</div>
+
+
+
+
+
+
+<br><br>
+<div> 
+<p><b>3 - Que és el Spam?</b></p>
+<button name="clear" onclick='vaciar()'><img heigth="15px" width="15px" src="borrar.png"></button>
+
+<button name="check" onclick="mostrartexto()"><img heigth="15px" width="15px" src="check.png"></button>
+ <textarea id="textarea" rows="4" cols="70">
+ </textarea>
+<br><br>
+ <textarea id="textorespuesta" style='visibility:hidden;' rows="4" cols="70" readonly="readonly"> Són els missatges elèctronics no sol·licitats. </textarea>
+<br><br>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+body {
+	background-color: #cceeff;
+	font-family: sans-serif;
+}
+
+#ig {
+	width: 300px;
+	height: 60px;
+	margin: 20px;
+	padding: 15px;
+}
+
+
+h1 {
+	color: #0000cc;
+}
+
+p {
+	font-weight: bold;
+	color: #0000cc;
+}
+
+
+b {
+	font-size: 18px;
+	color: #0000cc;
+}
+
+
+[name$="clear"] {
+	margin-left: 990px;
+}
+
+div {
+	background-color: #f4f4f4;
+	text-align: left;
+	border: solid;
+	border-color: #0066ff;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 20px;
+	color: #006699;
+}
+
+.vx {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 10px;
+	margin-left: 10px;
+}
+
+button {
+	width: 40px;
+	height: 40px;
+}
+
+input {
+	margin: 10px;
+}
+
+p[name='respostes']:hover {
+	background-color: #81cef8;
+}
+
+input[type='radio']:checked+label{
+	background-color: #59b7bf;
+}
+
+button:hover {
+ filter: invert(100%);
+}
